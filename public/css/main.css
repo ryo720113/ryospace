@@ -1,0 +1,50 @@
+body {
+    font-family: "Noto Sans T Chinese", "微軟正黑體", arial, sans-serif;
+}
+
+nav.edit-nav {
+	margin-bottom: 0px;
+}
+
+.title-menu {
+  min-width:300px;
+  font-size: 14pt;
+  background: #eaeae4;
+  padding: 0.5em 1em;
+  border-radius: 15px;
+  margin: 20px;
+}
+.title-menu .title {
+  color : #394846;
+  float: left;
+  display: inline-block;
+  margin-right: 1em;
+}
+.title-menu .title:after {
+  content: "►";
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+
+#wrapper {
+  background: url(../images/bg_header.png) no-repeat 0;
+  background-size: 100% 100%;
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+.form-check-input.edit-radio {
+	margin-left: 20px;
+}
+
+
+footer{
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #777;
+  /* border-top: 1px solid #e5e5e5; */
+  margin-top: 40px;
+  clear: both;
+}

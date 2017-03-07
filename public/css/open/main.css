@@ -1,0 +1,13 @@
+#mapObj {
+	width: 100%;
+	height: 700px;
+}
+.list_color {
+	color:black;
+	background:#00ff00;
+	width:130px;
+	height:20px;
+	display:-moz-inline-box;
+	display:inline-block;
+	padding-left:10px
+}
