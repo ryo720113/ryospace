@@ -108,13 +108,17 @@ class PostsController extends Controller
     public function comment($id, Request $request)
     {
         $post = \App\Post::find($id);
+
         if (is_null($post)) {
             return redirect('/posts')->with('warning', '找不到該文章');
         }
 
-        $comment = \App\comment::create($request->all());
-        
-        dd($comment);
+        $comment = new \App\Comment($request->all());
+        //$comment = \App\Comment::create($request->all());
 
+        $post->comments()->save($comment);
+
+        return redirect()->route('posts.show', $post->id)
+                         ->with('success', '回覆留言成功');
     }
 }

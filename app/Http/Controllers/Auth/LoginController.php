@@ -46,9 +46,9 @@ class LoginController extends Controller
             ->with('errorMessage','帳號或密碼輸入錯誤');
     }
 
-    public function logout()
-    {
-        return redirect('/tasks');
-    }
+    // public function logout()
+    // {
+    //     return redirect('/');
+    // }
 
 }

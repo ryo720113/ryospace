@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
-    protected $table = 'comments';
+    //protected $table = 'comments';
 
     protected $fillable = [
     	'name',
@@ -14,5 +14,9 @@ class Comment extends Model
     	'content',
     ];
 
+    public function post()
+    {
+    	$this->belongsTo('\App\Post');
+    }
 
 }
